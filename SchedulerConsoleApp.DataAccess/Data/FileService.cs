@@ -45,5 +45,16 @@ namespace SchedulerConsoleApp.DataAccess.Data
             }
         }
 
+        public void SaveActivity(Activity activity)
+        {
+            List<Activity> activities = ReadFile();
+            Activity tobeUpadated = activities.FirstOrDefault(t => t.Id == activity.Id);
+            if (tobeUpadated != null)
+            {
+                tobeUpadated = activity;
+            }
+            SaveActivitys(activities);
+        }
+
     }
 }

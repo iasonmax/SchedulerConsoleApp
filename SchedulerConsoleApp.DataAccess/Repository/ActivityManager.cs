@@ -1,5 +1,5 @@
-﻿using ActivityManagerConsoleApp.DataAccess.Data;
-using ActivityManagerConsoleApp.Models;
+﻿using ActivityManagerConsoleApp.Models;
+using SchedulerConsoleApp.DataAccess.Data;
 
 namespace ActivityManagerConsoleApp.DataAccess.Repository
 {

@@ -6,5 +6,7 @@ namespace SchedulerConsoleApp.DataAccess.Data
     {
         List<Activity> ReadFile();
         void SaveActivitys(List<Activity> activities);
+
+        public void SaveActivity(Activity updatedActivity);
     }
 }
